@@ -1,4 +1,9 @@
-# 42-env
+<div align="center">
+    <img src=".github/images/logo.png" height="128">
+</div>
+
+![GitHub Release](https://img.shields.io/github/v/release/enioaiello/42-env) ![GitHub last commit](https://img.shields.io/github/last-commit/enioaiello/42-env)
+
 
 ## À propos de 42-env
 
