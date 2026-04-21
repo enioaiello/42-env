@@ -9,6 +9,7 @@ function insert_new_line() {
 function display_error() {
 	echo "Error: $1" >&2
 	echo "The script will now close."
+	echo "Please, open an Issue on GitHub (https://github.com/enioaiello/42-env) to help fix this problem!"
 	exit 1 # Sort avec le code d'erreur 1
 }
 
