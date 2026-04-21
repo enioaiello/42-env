@@ -2,8 +2,11 @@
     <img src=".github/images/logo.png" height="128">
 </div>
 
-![GitHub Release](https://img.shields.io/github/v/release/enioaiello/42-env) ![GitHub last commit](https://img.shields.io/github/last-commit/enioaiello/42-env)
+<br>
 
+<div align="center">
+    <img src="https://img.shields.io/github/v/release/enioaiello/42-env"> <img src="https://img.shields.io/github/last-commit/enioaiello/42-env">
+</div>
 
 ## À propos de 42-env
 
