@@ -27,3 +27,10 @@ function display_warning() {
 function display_info() {
 	echo "Info: $1"
 }
+
+# Insère une nouvelle ligne dans le fichier de log avec le contenu demandé et l'heure
+function insert_log() {
+	local log_message="$1" # Définit la variable log_message avec le message demandé
+	local log_file="./output.log" # Définit la localisation du fichier log
+	echo "$(date '+%Y-%m-%d %H:%M:%S') - $log_message" >> "$log_file"
+}
