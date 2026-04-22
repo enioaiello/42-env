@@ -3,6 +3,7 @@
 # Définitions des variables globales
 username=""
 password=""
+error=0
 
 # Insère une nouvelle ligne
 function insert_new_line() {
@@ -62,16 +63,46 @@ function wait_input() {
 	done
 }
 
-# Affiche l'écran de collecte de paramètres
-function collect_screen()
-{
+# Enregistre un mot de passe
+function insert_password() {
+	echo "Nice to meet you $username!"
+        echo "You'll need a password to continue, here is the password rules:"
+        echo "  - Up to 4 characters"
+        echo "  - No empty password"
+        insert_new_line
+        echo "Caution! Your password is visible."
+        insert_new_line
+        ask_user_prompt "Enter a password: " password
+
+# Enregistre un nom d'utilisateur
+function insert_username() {
 	clear_window
 	echo "Before we can continue, please tell us your username and your password for this virtual machine."
+	echo "Here's the username rules:"
+	echo "  - Up to 4 characters"
+	echo "  - Only letters, dots and underscores"
+	if [ $error = 1 ] # Note for me: this is a POSIX compatible instruction.
+		echo "Please enter a valid username."
+	fi
+	ask_user_prompt "Enter a username (e.g. enio.aiello): " username
+	if [ -z $username ]
+		error = 1
+		insert_username
+	else
+		error = 0
+		insert_password
+	fi
+}
+
+# Affiche l'écran de collecte de paramètres
+function collect_screen() {
+	clear_window
+	insert_new_line
+	insert_username
 }
 
 # Télécharge et installe la dernière version du 42header
-function install_header()
-{
+function install_header() {
 	clear_window
 	echo "Please wait while 42header is being downloaded and installed."
 	echo "When installed, use F1 key to insert the header while in preview mode with vim to insert the header."
