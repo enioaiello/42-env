@@ -76,5 +76,4 @@ insert_new_line
 echo -e "\e[0;31mWarning!"
 echo -e "\e[0;31mThis project is made for educationnal purpose only. I am not responsible for any cheating or misuse. This project is intended for people who are retrying their piscine or for those who are simply curious. The environment has been recreated as accurately as possible so that users don't get lost while studying."
 insert_new_line
-echo "When you are ready, please use any key to proceed."
-
+wait_input "When you are ready, please use any key to proceed."
