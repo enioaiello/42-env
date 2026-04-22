@@ -68,3 +68,13 @@ echo "/*   Created by enio                                   #+#    #+#         
 echo "/*   https://github.com/enioaiello/42-env             ###   ########          */"
 echo "/*                                                                            */"
 echo "/* ************************************************************************** */"
+insert_new_line
+echo "This script will setup this environment for you."
+echo "Don't worry, the process is quick and simple."
+echo "After that, your environment will be ready and you can work immediately."
+insert_new_line
+echo -e "\e[0;31mWarning!"
+echo -e "\e[0;31mThis project is made for educationnal purpose only. I am not responsible for any cheating or misuse. This project is intended for people who are retrying their piscine or for those who are simply curious. The environment has been recreated as accurately as possible so that users don't get lost while studying."
+insert_new_line
+echo "When you are ready, please use any key to proceed."
+
