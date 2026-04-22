@@ -16,7 +16,7 @@
 
 - Logiciels et dépendances par défaut préinstallés
 - Customisation et personnalisation
-- Intégration de [norminette](https://github.com/42School/norminette)
+- Intégration de [norminette](https://github.com/42School/norminette) et de [42header](https://github.com/42paris/42header)
 
 ## Installation
 
