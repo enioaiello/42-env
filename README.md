@@ -36,9 +36,9 @@
 
 Voici les trois releases pour les trois hyperviseurs cités ci-dessus :
 
-- [Télécharger la release pour VirtualBox](#)
-- [Télécharger la release pour VMware](#)
-- [Télécharger la release pour qemu](#)
+- [Télécharger la dernière release pour VirtualBox](#)
+- [Télécharger la dernière release pour VMware](#)
+- [Télécharger la dernière release pour qemu](#)
 
 ### Lancer la machine virtuelle
 
