@@ -53,9 +53,29 @@ function clear_window() {
 
 # Attend une interaction de l'utilisateur
 function wait_input() {
-	pause '$1'
+	echo "$1"
+	while true; do
+		read -rsn1 key  # Ecoute un input de manière silencieuse
+		if [[ -n "$key" ]]; then
+			$2
+		fi
+	done
 }
 
+# Affiche l'écran de collecte de paramètres
+function collect_screen()
+{
+	clear_window
+	echo "Before we can continue, please tell us your username and your password for this virtual machine."
+}
+
+# Télécharge et installe la dernière version du 42header
+function install_header()
+{
+	clear_window
+	echo "Please wait while 42header is being downloaded and installed."
+	echo "When installed, use F1 key to insert the header while in preview mode with vim to insert the header."
+}
 
 # Affiche l'écran de bienvenue
 function welcome_screen() {
@@ -78,6 +98,9 @@ function welcome_screen() {
 	insert_new_line
 	echo -e "\e[0;31mWarning!"
 	echo -e "\e[0;31mThis project is made for educationnal purpose only. I am not responsible for any cheating or misuse. This project is intended for people who are retrying their piscine or for those who are simply curious. The environment has been recreated as accurately as possible so that users don't get lost while studying."
+	echo -e "\e[0m"
 	insert_new_line
-	wait_input "When you are ready, please use any key to proceed."
+	wait_input "When you are ready, please use any key to proceed." collect_screen
 }
+
+welcome_screen # Appel la fonction qui démarre le script
