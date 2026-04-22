@@ -86,9 +86,9 @@ function welcome_screen() {
 	echo "/*                                                      :+:      :+:    :+:   */"
 	echo "/*                                                    +:+ +:+         +:+     */"
 	echo "/*   Welcome to                                     +#+  +:+       +#+        */"
-	echo "/*   42-env                                       +#+#+#+#+#+   +#+           */"
-	echo "/*   Created by enio                                   #+#    #+#             */"
-	echo "/*   https://github.com/enioaiello/42-env             ###   ########          */"
+	echo "/*                                                +#+#+#+#+#+   +#+           */"
+	echo "/*   Created by enioaiello                             #+#    #+#             */"
+	echo "/*   https://github.com/enioaiello/42-env             ###   ######## -env     */"
 	echo "/*                                                                            */"
 	echo "/* ************************************************************************** */"
 	insert_new_line
