@@ -23,7 +23,7 @@
 ### Prérequis
 
 > [!NOTE]
-> Vous avez besoin d'un hyperviseur avant de continuer, je recommande personnellement **VMware Fusion** (sur Windows et macOS) ainsi que **qemu** (sur GNU/Linux et BSD). Pour **qemu** il est totalement possible d'utiliser [virt-manager](https://github.com/virt-manager/virt-manager) pour simplifier son utilisation.
+> Vous avez besoin d'un hyperviseur avant de continuer, je recommande personnellement **VMware Fusion** (sur macOS) ou **VMware Workstation** (sur Windows et Linux) ainsi que **qemu** (sur GNU/Linux et BSD, Recommandé pour Linux). Pour **qemu** il est totalement possible d'utiliser [virt-manager](https://github.com/virt-manager/virt-manager) pour simplifier son utilisation.
 
 - [VirtualBox](https://www.virtualbox.org/)
 - [VMware](https://www.vmware.com/)
