@@ -10,7 +10,7 @@
 
 ## À propos de 42-env
 
-**42-env** est un projet contenant des environnements de travails préfaits utilisé sur la nouvelle infra **42next**.
+**42-env** est un projet contenant des environnements de travail préfaits utilisé sur la nouvelle infra **42next**.
 
 ## Fonctionnalités
 
