@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Définitions des variables globales
+username=""
+password=""
+
 # Insère une nouvelle ligne
 function insert_new_line() {
 	echo ""
@@ -34,3 +38,33 @@ function insert_log() {
 	local log_file="./output.log" # Définit la localisation du fichier log
 	echo "$(date '+%Y-%m-%d %H:%M:%S') - $log_message" >> "$log_file"
 }
+
+# Demande une information
+function ask_user_prompt() {
+	read -p "$1" $2
+	echo "$3"
+}
+
+# Nettoyage de la fenêtre
+function clear_window() {
+	clear
+	insert_new_line
+}
+
+# Attend une interaction de l'utilisateur
+function wait_input() {
+	pause
+}
+
+clear_window
+echo "/* ************************************************************************** */"
+echo "/*                                                                            */"
+echo "/*                                                        :::      ::::::::   */"
+echo "/*                                                      :+:      :+:    :+:   */"
+echo "/*                                                    +:+ +:+         +:+     */"
+echo "/*   Welcome to                                     +#+  +:+       +#+        */"
+echo "/*   42-env                                       +#+#+#+#+#+   +#+           */"
+echo "/*   Created by enio                                   #+#    #+#             */"
+echo "/*   https://github.com/enioaiello/42-env             ###   ########          */"
+echo "/*                                                                            */"
+echo "/* ************************************************************************** */"
