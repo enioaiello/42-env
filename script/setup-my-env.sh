@@ -53,7 +53,7 @@ function clear_window() {
 
 # Attend une interaction de l'utilisateur
 function wait_input() {
-	pause
+	pause '$1'
 }
 
 clear_window
